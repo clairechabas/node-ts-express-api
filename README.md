@@ -7,7 +7,7 @@ This project is a boilerplate to kick start your Node.js API using Express, Post
 > 
 > This project is being built and is not ready for use yet.
 >
-<br /><br />
+<br />
 
 I found myself rewriting the same code each time I wanted to start a new project so I built this repo for everyone to use. If you find this starter useful don't hesitate to let me know with a star it's always nice to know your work is appreciated ✨
 <br /><br />
@@ -53,6 +53,6 @@ Build the app for production (coming):
 ```
 npm run deploy
 ```
-<br /><br />
+<br />
 
 Enjoy!
