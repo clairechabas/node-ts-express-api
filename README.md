@@ -1,4 +1,4 @@
-# 🕹 Node.js + TypeScript + Express + PostegreSQL + Prisma API Starter
+# 🕹 API Starter for Node.js + TypeScript + Express + PostegreSQL + Prisma
 
 This project is a starter kit for Node.js APIs using TypeScript, Express, PostegreSQL and Prisma. 
 <br /><br />
