@@ -1,16 +1,15 @@
-# 🕹 Node.js + Express + PostegreSQL + TypeScript API Starter
+# 🕹 Node.js + TypeScript + Express + PostegreSQL + Prisma API Starter
 
-This project is a boilerplate to kick start your Node.js API using Express, PostegreSQL and TypeScript. 
+This project is a starter kit for Node.js APIs using TypeScript, Express, PostegreSQL and Prisma. 
 <br /><br />
 > 
 > 🚧 Work in progress
 > 
 > This project is being built and is not ready for use yet.
 >
-<br />
-
-I found myself rewriting the same code each time I wanted to start a new project so I built this repo for everyone to use. If you find this starter useful don't hesitate to let me know with a star it's always nice to know your work is appreciated ✨
 <br /><br />
+
+Feel free to fork this repo to kickstart you next Node.js project in minutes.
 
 ## For the builders
 Feel free to fork or clone this repo for your own use. Don't forget to remove the dummy code before building you own thing of course.
@@ -53,6 +52,9 @@ Build the app for production (coming):
 ```
 npm run deploy
 ```
-<br />
+<br /><br />
 
+If you find this starter useful don't hesitate to let me know with a star it's always nice to know your work is appreciated ✨
+
+<br /><br />
 Enjoy!
