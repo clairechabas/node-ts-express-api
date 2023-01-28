@@ -7,6 +7,7 @@ Feel free to fork this repo to kickstart you next Node.js project.
 1. Fork and clone this repo.
 2. Run `npm install`.
 4. Use the scripts below.
+5. Replace the boilerplate code with your own.
 <br /><br />
 
 ## Scripts
