@@ -25,7 +25,7 @@ npm run start
 ## Feedback
 Open an issue to report a bug, ask a question, suggest an improvement or request a change.
 <br /><br />
-And if you find this starter useful don't hesitate to let me know with a star it's always nice to know your work is appreciated ✨
+And if you find this starter useful don't hesitate to let me know with a star, it's always nice to know your work is appreciated ✨
 
 <br />
 Enjoy!
