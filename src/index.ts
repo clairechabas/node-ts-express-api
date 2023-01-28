@@ -8,8 +8,10 @@ app.use(express.json())
 // To convert `request` body to JSON for other data types like form-data, string, array.
 app.use(express.urlencoded({ extended: true }))
 
-app.get('/api', (req: Request, res: Response) =>
-  res.send("👋 Welcome, let's take care of your tabs.")
+app.get('/', (req: Request, res: Response) =>
+  res.send(
+    '👋 Welcome and enjoy this starter for creating Node.js APIs with TypeScript and Express!'
+  )
 )
 
 app.use('/api/tabs', tabs)
