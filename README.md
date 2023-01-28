@@ -2,7 +2,7 @@
 
 This project is a starter kit for Node.js APIs using TypeScript and Express. 
 Feel free to fork this repo to kickstart you next Node.js project.
-<br />
+
 ## Project setup
 1. Fork and clone this repo.
 2. Run `npm install`.
@@ -14,12 +14,12 @@ Run the app in development mode:
 ```
 npm run dev
 ```
-<br />
+
 Build the app for production:
 ```
 npm run start
 ```
-<br /><br />
+<br />
 
 ## Feedback
 Open an issue to report a bug, ask a question, suggest an improvement or request a change.
