@@ -1,39 +1,11 @@
-# 🕹 API Starter for Node.js + TypeScript + Express + PostegreSQL + Prisma
+# 🕹 API Starter for Node.js + TypeScript + Express
 
-This project is a starter kit for Node.js APIs using TypeScript, Express, PostegreSQL and Prisma. 
-<br /><br />
-> 
-> 🚧 Work in progress
-> 
-> This project is being built and is not ready for use yet.
->
-<br /><br />
-
-Feel free to fork this repo to kickstart you next Node.js project in minutes.
-
-## For the builders
-Feel free to fork or clone this repo for your own use. Don't forget to remove the dummy code before building you own thing of course.
-<br /><br />
-
-## For the learners
-I'm writting a full step-by-step guide for those of you who'd like to learn who to build such an API. I'll publish it on Medium when it's ready so stay tuned.
-<br /><br />
-
-## Feedback
-Open an issue to report a bug, ask a question, suggest an improvement or request a change.
-<br /><br />
-
-## Features
-- Express server with TypeScript and PostgreSQL support.
-- Routes and handlers for basic CRUD features with dummy demo code.
-- Tests (coming).
-- Scripts for running development mode, tests, and production builds.
-<br /><br />
-
+This project is a starter kit for Node.js APIs using TypeScript and Express. 
+Feel free to fork this repo to kickstart you next Node.js project.
+<br />
 ## Project setup
 1. Fork and clone this repo.
 2. Run `npm install`.
-3. Set up your PostgreSQL DB and update the credentials settings.
 4. Use the scripts below.
 <br /><br />
 
@@ -42,19 +14,17 @@ Run the app in development mode:
 ```
 npm run dev
 ```
-
-Run tests (coming):
+<br />
+Build the app for production:
 ```
-npm run test
-```
-
-Build the app for production (coming):
-```
-npm run deploy
+npm run start
 ```
 <br /><br />
 
-If you find this starter useful don't hesitate to let me know with a star it's always nice to know your work is appreciated ✨
-
+## Feedback
+Open an issue to report a bug, ask a question, suggest an improvement or request a change.
 <br /><br />
+And if you find this starter useful don't hesitate to let me know with a star it's always nice to know your work is appreciated ✨
+
+<br />
 Enjoy!
