@@ -14,7 +14,7 @@ Run the app in development mode:
 ```
 npm run dev
 ```
-
+<br />
 Build the app for production:
 ```
 npm run start
