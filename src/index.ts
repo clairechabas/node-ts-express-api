@@ -12,6 +12,6 @@ app.get('/api', (req: Request, res: Response) =>
   res.send("👋 Welcome, let's take care of your tabs.")
 )
 
-app.use('/tabs', tabs)
+app.use('/api/tabs', tabs)
 
 app.listen(PORT, () => console.log(`🚀 Listening on port ${PORT}`))
