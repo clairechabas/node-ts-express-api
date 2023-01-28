@@ -3,21 +3,26 @@ import crypto from 'node:crypto'
 
 interface Tab {
   id: string
-  createdAt: Date
   url: string
 }
-type TabRequestBody = { url: string }
-type TabRequestParams = { id: string }
+interface ReqBody {
+  url: string
+}
+interface ReqParams {
+  id: string
+}
 
+// Mock database: replace with DB of your choice
 let tabs: Tab[] = []
 
-export async function createTab(req: Request, res: Response) {
+export async function createTab(
+  req: Request<ReqParams, ReqBody>,
+  res: Response
+) {
   try {
-    const body = req.body as TabRequestBody
     const newTab: Tab = {
       id: crypto.randomUUID(),
-      createdAt: new Date(),
-      url: body.url,
+      url: req.body.url,
     }
 
     tabs.push(newTab)
@@ -42,10 +47,14 @@ export async function getAllTabs(req: Request, res: Response) {
   }
 }
 
-export async function getOneTab(req: Request, res: Response) {
+export async function getOneTab(
+  req: Request<ReqParams, ReqBody>,
+  res: Response
+) {
   try {
-    const params = req.params as TabRequestParams
-    const foundTab: Tab | undefined = tabs.find((tab) => tab.id === params.id)
+    const foundTab: Tab | undefined = tabs.find(
+      (tab) => tab.id === req.params.id
+    )
 
     if (!foundTab) {
       return res.status(404).json({ message: `Sorry, we can't find this tab.` })
@@ -60,21 +69,22 @@ export async function getOneTab(req: Request, res: Response) {
   }
 }
 
-export async function updateTabs(req: Request, res: Response) {
+export async function updateTabs(
+  req: Request<ReqParams, ReqBody>,
+  res: Response
+) {
   try {
-    const body = req.body as TabRequestBody
-    const params = req.params as TabRequestParams
-    const tabIndexInDb = tabs.findIndex((tab) => tab.id === params.id)
+    const tabIndexInDb = tabs.findIndex((tab) => tab.id === req.params.id)
 
     if (tabIndexInDb >= tabs.length) {
       return res.status(404).json({
-        message: `Not found. The tab with ID ${params.id} doesn't exist.`,
+        message: `Not found. The tab with ID ${req.params.id} doesn't exist.`,
       })
     }
 
     tabs[tabIndexInDb] = {
       ...tabs[tabIndexInDb],
-      ...body,
+      ...req.body,
     }
 
     return res.status(200).json({ message: 'Tab updated successfully.' })
@@ -86,10 +96,12 @@ export async function updateTabs(req: Request, res: Response) {
   }
 }
 
-export async function deleteTab(req: Request, res: Response) {
+export async function deleteTab(
+  req: Request<ReqParams, ReqBody>,
+  res: Response
+) {
   try {
-    const params = req.params as TabRequestParams
-    tabs = tabs.filter((tab) => tab.id !== params.id)
+    tabs = tabs.filter((tab) => tab.id !== req.params.id)
 
     return res.status(200).json({ message: 'Tab deleted successfully.' })
   } catch (error) {
